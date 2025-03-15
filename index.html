@@ -199,12 +199,11 @@
     <div class="columns is-centered">
       <div class="column is-full">
         <div class="video-container">
-          <iframe
-            src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"  <!-- Replace with your actual video URL -->
-            frameborder="0"
-            allowfullscreen
-          ></iframe>
-        </div>
+	  <video controls width="100%"> <!-- Add 'controls' for play/pause, etc. -->
+	    <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4" type="video/mp4">
+	    Your browser does not support the video tag.
+	  </video>
+	</div>
         <figcaption class="has-text-centered"><b>Video</b>: A short video demonstrating our HSRI Dataset and Benchmark.</figcaption> <!- Optional caption -->
       </div>
     </div>
