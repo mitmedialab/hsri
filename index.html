@@ -66,17 +66,17 @@
               <a href="https://ybkim95.github.io/">Yubin Kim</a>,
             </span>
 	    <span class="author-block">
-              <a href="https://ybkim95.github.io/">Parker Malachowsky</a>,
+              <a href="https://www.media.mit.edu/people/pmalacho/overview/">Parker Malachowsky</a>,
             </span>
 	    <span class="author-block">
-              <a href="https://ybkim95.github.io/">Sooyeon Jeong</a>,
+              <a href="https://www.sooyeonjeong.com/">Sooyeon Jeong</a>,
             </span>
 	    <span class="author-block">
-              <a href="https://ybkim95.github.io/">Sharifa Alghowinem</a>,
+              <a href="https://www.media.mit.edu/people/sharifah/overview/">Sharifa Alghowinem</a>,
             </span>
 	    <br>
 	    <span class="author-block">
-	      <a href="https://www.media.mit.edu/people/cynthiab/overview/">Louis-philippe Morency</a><sup></sup>,
+	      <a href="https://www.cs.cmu.edu/~morency/">Louis-philippe Morency</a><sup></sup>,
 	    </span>
 	    <span class="author-block">
 	      <a href="https://www.media.mit.edu/people/cynthiab/overview/">Cynthia Breazeal</a><sup></sup>,
@@ -101,7 +101,7 @@
                   <span>Paper</span>
                 </a>
               </span>
-              <span class="link-block">
+<!--               <span class="link-block">
                 <a href="https://arxiv.org/pdf/2405.15708"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -109,7 +109,7 @@
                   </span>
                   <span>arXiv</span>
                 </a>
-              </span>
+              </span> -->
             </div>
 
           </div>
@@ -144,6 +144,48 @@
           	Our work aims to advance the socially intelligent behavior of social embodied artificial intelligence (AI) agents in real-world social interactions. Recently, foundational models are being utilized as automatic evaluators of social interactions ( 32 ). To enable further research in this direction, we introduce a large-scale real-world Human Robot Social Interaction (HSRI) Dataset to benchmark the capabilities of Language Models (LMs) and multimodal foundational models to identify and reason about social errors and competencies in real-world human-robot interactions. Our dataset consists of 440 real-world human social robot interaction videos, and is accompanied by over 10K annotations, detailing the robot’s social errors, competencies, rationale, and corrective actions, capturing unique aspects of human-AI interaction only present in real-world interactions, with annotations on error cases where embodied physical AI agents lack human-like social behaviors such as conversational dynamics and emotion recognition, which are often overlooked and difficult to formulate as machine learning tasks without real-world data. Then, to further assess whether recent AI models can identify and reason through such real-world social interactions, we propose eight new benchmark tasks for evaluating AI model’s ability to reason about social interactions, including detecting errors and competencies, rationalizing, and inferringcorrective actions. Human studies and experiments with modern large language models (LLMs) and vision-language models (VLMs) reveal that current models struggle with these tasks.  
 	  </p>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Dataset Characteristics</h2>
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <figure class="image is-square">
+          <img src="./static/images/hsri_stats.png" alt="Figure 2: Overall characteristics of the SRI Dataset.">
+          <figcaption class="has-text-centered"><b>Figure 2</b>: Overall characteristics of the SRI Dataset. Our dataset contains high overlapping annotations with a high level of agreement among annotators regarding error and competency labels. The dataset includes more annotations from the verbal channel compared to the non-verbal one, with a balanced proportion of error and competency labels. Amongst various social attributes, with the majority of annotations falling under the category of conversational mechanics, followed by intention and engagement.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Benchmark Tasks</h2>
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <figure class="image is-square">
+          <img src="./static/images/hsri_task.png" alt="Figure 3: Our benchmark offers 8 tasks dedicated to probing various facets of AI model's social reasoning.">
+          <figcaption class="has-text-centered"><b>Figure 3</b>: Our benchmark offers 8 tasks dedicated to probing various facets of AI model’s social reasoning with regards to detecting social errors and competencies, identifying social attributes, understanding the progression of social interactions, and rationalization and correction of social errors.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Benchmark Results</h2>
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <figure class="image is-square">
+          <img src="./static/images/hsri_exp.png" alt="Figure 4: Results per model across all 8 tasks, human performance is marked in dotted lines.">
+          <figcaption class="has-text-centered"><b>Figure 4</b>: Results per model across all 8 tasks, human performance is marked in dotted lines. (L): language-only inputs, (L+V): language and visual inputs. Gemini-1.5-flash does the best in Error/Comp./None detection and error detection tasks, gpt4-o performs the best on attribute identification, internVL2 on multiple attribute presence, gpt-4o and its variants does well on interaction progression(pre, post) reasoning tasks, and o1 performs well on the rationale task and gpt-4o with images and CoT performs best on the repair task. Models from similar sources show similar trends, as indicated by the shape of the radar plot, and upgraded models become ’larger’ (gpt-4o variants).</figcaption>
+        </figure>
       </div>
     </div>
   </div>
