@@ -57,7 +57,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">EmpathicStories++: A Multimodal Dataset for Empathy towards Personal Experiences</h1>
+          <h1 class="title is-1 publication-title">Human Robot Social Interaction (HSRI) Dataset & Benchmark</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://dongwonl.com/">Dong Won Lee</a>,</span>
@@ -65,7 +65,19 @@
             <span class="author-block">
               <a href="https://ybkim95.github.io/">Yubin Kim</a>,
             </span>
+	    <span class="author-block">
+              <a href="https://ybkim95.github.io/">Parker Malachowsky</a>,
+            </span>
+	    <span class="author-block">
+              <a href="https://ybkim95.github.io/">Sooyeon Jeong</a>,
+            </span>
+	    <span class="author-block">
+              <a href="https://ybkim95.github.io/">Sharifa Alghowinem</a>,
+            </span>
 	    <br>
+	    <span class="author-block">
+	      <a href="https://www.media.mit.edu/people/cynthiab/overview/">Louis-philippe Morency</a><sup></sup>,
+	    </span>
 	    <span class="author-block">
 	      <a href="https://www.media.mit.edu/people/cynthiab/overview/">Cynthia Breazeal</a><sup></sup>,
 	    </span>
@@ -129,8 +141,8 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Modeling empathy is a complex endeavor that is rooted in interpersonal and experiential dimensions of human interaction, and remains an open problem within AI. Existing empathy datasets fall short in capturing the richness of empathy responses, often being confined to in-lab or acted scenarios, lacking longitudinal data, and missing self-reported labels. We introduce a new multimodal dataset for empathy during personal experience sharing: the EmpathicStories++ dataset containing 53 hours of video, audio, and text data of 41 participants sharing vulnerable experiences and reading empathically resonant stories with an AI agent. EmpathicStories++ is the first longitudinal dataset on empathy, collected over a month-long deployment of social robots in participants' homes, as participants engage in natural, empathic storytelling interactions with AI agents. We then introduce a novel task of predicting individuals' empathy toward others' stories based on their personal experiences, evaluated in two contexts: participants' own personal shared story context and their reflections on stories they read. We benchmark this task using state-of-the-art models to pave the way for future improvements in contextualized and longitudinal empathy modeling. Our work provides a valuable resource for further research in developing empathetic AI systems and understanding the intricacies of human empathy within genuine, real-world settings.  
-          </p>
+          	Our work aims to advance the socially intelligent behavior of social embodied artificial intelligence (AI) agents in real-world social interactions. Recently, foundational models are being utilized as automatic evaluators of social interactions ( 32 ). To enable further research in this direction, we introduce a large-scale real-world Human Robot Social Interaction (HSRI) Dataset to benchmark the capabilities of Language Models (LMs) and multimodal foundational models to identify and reason about social errors and competencies in real-world human-robot interactions. Our dataset consists of 440 real-world human social robot interaction videos, and is accompanied by over 10K annotations, detailing the robot’s social errors, competencies, rationale, and corrective actions, capturing unique aspects of human-AI interaction only present in real-world interactions, with annotations on error cases where embodied physical AI agents lack human-like social behaviors such as conversational dynamics and emotion recognition, which are often overlooked and difficult to formulate as machine learning tasks without real-world data. Then, to further assess whether recent AI models can identify and reason through such real-world social interactions, we propose eight new benchmark tasks for evaluating AI model’s ability to reason about social interactions, including detecting errors and competencies, rationalizing, and inferringcorrective actions. Human studies and experiments with modern large language models (LLMs) and vision-language models (VLMs) reveal that current models struggle with these tasks.  
+	  </p>
         </div>
       </div>
     </div>
@@ -141,11 +153,11 @@
 <section class="section" id="BibTeX">
 	<div class="container is-max-desktop content">
 	  <h2 class="title">Citation</h2>
-	  <pre><code>@misc{shen2024empathicstories,
-	title={EmpathicStories++: A Multimodal Dataset for Empathy towards Personal Experiences}, 
-	author={Dong Won Lee and Yubin Kim and Cynthia Breazeal and Hae Won Park},
-	year={2024},
-	eprint={2405.15708},
+	  <pre><code>@misc{lee2025hsri,
+	title={Human Robot Social Interaction (HSRI) Dataset & Benchmark}, 
+	author={Dong Won Lee and Yubin Kim and Parker Malachowsky and Sooyeon Jeong and Sharifa Alghowinem and Louis-philippe Morency and Cynthia Breazeal and Hae Won Park},
+	year={2025},
+	eprint={},
 	archivePrefix={arXiv},
 	primaryClass={cs.CL}
 }</code></pre>
