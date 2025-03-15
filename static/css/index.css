@@ -27,6 +27,22 @@ body {
   font-family: 'Google Sans', sans-serif;
 }
 
+.hero.teaser .hero-body {
+  padding-top: 0rem; /* Adjust top padding if needed */
+  padding-bottom: 0rem; /* Adjust bottom padding if needed */
+  display: flex;           /* Enable flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* Center vertically (if needed, though usually not for images) */
+  text-align: center;      /* Fallback for older browsers, center text/inline elements */
+}
+
+.hero.teaser .hero-body img {
+  max-width: 100%;       /* Ensure image doesn't exceed container width */
+  height: auto;           /* Maintain aspect ratio */
+  display: block;          /* Remove extra space below image (inline-block issue) */
+  margin-left: auto;      /* Center horizontally (alternative to flexbox centering) */
+  margin-right: auto;     /* Center horizontally (alternative to flexbox centering) */
+}
 
 .publication-title {
 }
